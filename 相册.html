@@ -91,9 +91,9 @@
 		/*模态框*/
 		.modal {
 			display: none; /* 默认隐藏 */
-			position: fixed; /* 根据浏览器定位 */
+			position: fixed; /* 根浏览器定位 */
 			z-index: 1; /* 放在顶部 */
-			left: 100px;
+			/* left: 1%; */
 			top: 0;
 			width: 100%; /* 全宽 */
 			height: 100%; /* 全高 */
@@ -171,7 +171,7 @@
 			<!-- <p class="close_music_div"><a href="javascript:void(0)" onclick="pauseAuto()" class="f85">关闭音乐 <img src="icon/stop.png" alt=""></a></p>
 			<p class="open_music_div" style="display: none"><a href="javascript:void(0)" onclick="openmusic()" class="f85">开启音乐 </a></p>
 			<audio style="display:none; height: 0" id="bg-music" preload="auto" src="vido/aaa.mp3" loop="loop" autoplay="autoplay"></audio> -->
-			<audio autoplay="autoplay"  src="vido/aaa.mp3" controls="controls" loop="loop" id="bgmusic"></audio>
+			<audio autoplay="autoplay"  src="vido/aaa.mp3" controls="controls" loop="loop" id="bgmusic" preload="auto" type="audio/mp3"></audio>
 		</div>
 	</div>
 	
@@ -210,10 +210,10 @@
 		}
 	}
 	
-	// var bgmusic = document.getElementById('bgmusic');
-	// $(document).ready(function(){
-	// 	bgmusic.play();
-	// });
+	var bgmusic = document.getElementById('bgmusic');
+	$(document).ready(function(){
+		bgmusic.play();
+	});
 	
 	
 	
